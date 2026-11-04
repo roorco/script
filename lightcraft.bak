@@ -1,2 +1,0 @@
-#!/bin/sh
-exec "$(find "$HOME/Applications" -iname 'lightcraft*.AppImage' | sort -V | tail -n1)" "$@"
