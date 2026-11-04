@@ -1,2 +1,2 @@
 #!/bin/sh
-exec "$(find "$HOME/Applications" -iname 'vectorcraft*.AppImage' | sort -V | tail -n1)" "$@"
+exec "$(find "$HOME/App" -iname 'vectorcraft*.AppImage' | sort -V | tail -n1)" "$@"
