@@ -1,0 +1,2 @@
+#!/bin/sh
+exec "$(find "$HOME/Applications" -iname 'designcraft*.AppImage' | sort -V | tail -n1)" "$@"

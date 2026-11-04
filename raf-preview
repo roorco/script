@@ -1,0 +1,15 @@
+#!/bin/sh
+
+DIR=/tmp/ranger-previews
+BASE=$(basename $1 .raf)
+
+mkdir -p $DIR
+exiv2 -e p2 -l /tmp/ranger-previews "$1"
+jhead -autorot $DIR/$BASE-preview2.jpg 
+
+if [ -z "$2" ]; then
+    sxiv $DIR/$BASE-preview2.jpg 
+else
+    cp $DIR/$BASE-preview2.jpg $2
+fi
+rm $DIR/$BASE-preview2.jpg 
