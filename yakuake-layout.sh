@@ -22,5 +22,5 @@ aggiungi() {          # $1 = titolo, $2 = comando (vuoto = solo terminale)
 }
 
 aggiungi "calendario" "ikhal"
-aggiungi "yazi" "yazi"
+aggiungi "yazi" "y"
 aggiungi "terminale" ""
